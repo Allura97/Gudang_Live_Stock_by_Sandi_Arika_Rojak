@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".tambahbarang">
+
+
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnertambahbarang"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tulis Nama Barang"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_below="@id/spinnertambahbarang"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:id="@+id/tulisnamabarang"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tulisnamabarang"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/namabarang"
+        android:hint="Blok Rem"
+        android:inputType="text"
+        android:textColorHint="#515151"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#F2F2F2"
+        android:padding="15dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tulis Jumlah Barang"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tulisjumlahbarang"
+        android:layout_below="@+id/namabarang"
+        android:textColor="@color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tulisjumlahbarang"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/jumlahbarang"
+        android:hint="100"
+        android:inputType="number"
+        android:textColorHint="#515151"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#F2F2F2"
+        android:padding="15dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerpilihsatuan"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/jumlahbarang"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerpilihsatuan"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        android:backgroundTint="@color/biru"
+        android:id="@+id/submit"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>

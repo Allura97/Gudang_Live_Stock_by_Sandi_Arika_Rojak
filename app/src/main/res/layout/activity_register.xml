@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:background="@color/white">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nama"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="nama"
+        android:inputType="text"
+        android:textColorHint="#515151"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#F2F2F2"
+        android:padding="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nipp"
+        android:layout_below="@+id/nama"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="nipp"
+        android:inputType="number"
+        android:textColorHint="#515151"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#F2F2F2"
+        android:padding="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:layout_below="@+id/nipp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="email"
+        android:inputType="text"
+        android:textColorHint="#515151"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#F2F2F2"
+        android:padding="15dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="pasword"
+        android:inputType="textPassword"
+        android:textColorHint="#515151"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#F2F2F2"
+        android:padding="15dp"/>
+
+
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Register"
+        android:layout_below="@+id/password"
+        android:backgroundTint="#8EDDFF"
+        android:textColor="#515151"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/register2"/>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Live Stok Gudang"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_marginTop="200dp"
+        android:id="@+id/logo"
+        android:fontFamily="sans-serif-medium"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email1"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Email"
+        android:inputType="text"
+        android:textColorHint="#515151"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#F2F2F2"
+        android:padding="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/password"
+        android:layout_below="@id/email1"
+        android:hint="Password"
+        android:textColorHint="#515151"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#F2F2F2"
+        android:padding="15dp"
+        android:inputType="textPassword"/>
+
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#8EDDFF"
+        android:textSize="20sp"
+        android:textColor="#515151"
+        android:id="@+id/login"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Register"
+        android:layout_below="@+id/login"
+        android:backgroundTint="#8EDDFF"
+        android:textColor="#515151"
+        android:textSize="20sp"
+        android:id="@+id/register"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Lupa Password"
+        android:id="@+id/tombollupapassword"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/register"/>
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Powered by Rojak"
+        android:layout_below="@id/tombollupapassword"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:layout_marginTop="30dp"/>
+
+
+  </RelativeLayout>
